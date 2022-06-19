@@ -11,15 +11,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.1.131:5001/is_valid",
+					"raw": "http://160a-85-31-131-19.ngrok.io/is_valid",
 					"protocol": "http",
 					"host": [
-						"192",
-						"168",
-						"1",
-						"131"
+						"160a-85-31-131-19",
+						"ngrok",
+						"io"
 					],
-					"port": "5001",
 					"path": [
 						"is_valid"
 					]
@@ -33,15 +31,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.1.131:5001/get_chain",
+					"raw": "http://160a-85-31-131-19.ngrok.io/get_chain",
 					"protocol": "http",
 					"host": [
-						"192",
-						"168",
-						"1",
-						"131"
+						"160a-85-31-131-19",
+						"ngrok",
+						"io"
 					],
-					"port": "5001",
 					"path": [
 						"get_chain"
 					]
@@ -55,15 +51,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.1.131:5001/mine_block",
+					"raw": "http://160a-85-31-131-19.ngrok.io/mine_block",
 					"protocol": "http",
 					"host": [
-						"192",
-						"168",
-						"1",
-						"131"
+						"160a-85-31-131-19",
+						"ngrok",
+						"io"
 					],
-					"port": "5001",
 					"path": [
 						"mine_block"
 					]
@@ -77,15 +71,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.1.131:5002/replace_chain",
+					"raw": "http://160a-85-31-131-19.ngrok.io/replace_chain",
 					"protocol": "http",
 					"host": [
-						"192",
-						"168",
-						"1",
-						"131"
+						"160a-85-31-131-19",
+						"ngrok",
+						"io"
 					],
-					"port": "5002",
 					"path": [
 						"replace_chain"
 					]
@@ -100,7 +92,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nodes\": [\r\n        \"http://192.168.1.131:5002\",\r\n        \"http://192.168.1.131:5003\"\r\n    ]\r\n}",
+					"raw": "{\r\n    \"nodes\": [\r\n        \"http://160a-85-31-131-20.ngrok.io\",\r\n        \"http://160a-85-31-131-21.ngrok.io\"\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -108,15 +100,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.1.131:5001/connect_node",
+					"raw": "http://160a-85-31-131-19.ngrok.io/connect_node",
 					"protocol": "http",
 					"host": [
-						"192",
-						"168",
-						"1",
-						"131"
+						"160a-85-31-131-19",
+						"ngrok",
+						"io"
 					],
-					"port": "5001",
 					"path": [
 						"connect_node"
 					]
@@ -131,7 +121,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"sender\": \"Jaime\",\r\n    \"receiver\": \"Cris\",\r\n    \"amount\" : 10000\r\n}",
+					"raw": "{\r\n    \"sender\": \"Martinez\",\r\n    \"receiver\": \"Cristinel\",\r\n    \"amount\" : 10000\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -139,15 +129,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.1.131:5001/add_tx",
+					"raw": "http://160a-85-31-131-19.ngrok.io/add_tx",
 					"protocol": "http",
 					"host": [
-						"192",
-						"168",
-						"1",
-						"131"
+						"160a-85-31-131-19",
+						"ngrok",
+						"io"
 					],
-					"port": "5001",
 					"path": [
 						"add_tx"
 					]
