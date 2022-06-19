@@ -59,7 +59,7 @@ You can use the HTTP client of your choice to call the endpoints. In the next ex
     "message": "OK 200 - blockchain is valid :)"
 }
 ```
-##### in case of r¡the endpoint return a 500 error, the response will be
+in case of the endpoint returns a 500 error, the response will be
 ```json
 {
     "message": "ERROR 500 - blockchain not valid :("
