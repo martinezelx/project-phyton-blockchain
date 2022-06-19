@@ -82,3 +82,53 @@ in case of the endpoint returns a 500 error, the response will be
     "length": 1
 }
 ```
+
+#### Mine block
+- `GET http://160a-85-31-131-19.ngrok.io/mine_block`
+```json
+{
+    "index": 2,
+    "message": "Congrats for the new block bro!",
+    "previous_hash": "456d2e5ec72c986e0f1df55ef56969ea4a187fa0a47e631854bd1e34a47c45fa",
+    "proof": 533,
+    "timestamp": "2022-06-19 15:20:36.523789",
+    "transactions": [
+        {
+            "amount": 10,
+            "receiver": "Martinez",
+            "sender": "0fe9adafc8aa4319987156b493cfd2ca"
+        }
+    ]
+}
+```
+
+#### Replace the chain if its neccesary
+- `GET http://160a-85-31-131-19.ngrok.io/replace_chain`
+```json
+{
+    "actual_chain": [
+        {
+            "index": 1,
+            "previous_hash": "0",
+            "proof": 1,
+            "timestamp": "2022-06-19 15:11:52.370477",
+            "transactions": []
+        },
+        {
+            "index": 2,
+            "previous_hash": "456d2e5ec72c986e0f1df55ef56969ea4a187fa0a47e631854bd1e34a47c45fa",
+            "proof": 533,
+            "timestamp": "2022-06-19 15:20:36.523789",
+            "transactions": [
+                {
+                    "amount": 10,
+                    "receiver": "Martinez",
+                    "sender": "0fe9adafc8aa4319987156b493cfd2ca"
+                }
+            ]
+        }
+    ],
+    "message": "All nodes are synchronized, not replaced"
+}
+```
+returns the entire chain and a message for verify if chain is synchronized or not
