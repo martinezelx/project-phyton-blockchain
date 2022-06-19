@@ -39,12 +39,14 @@ If all you want is a unique ID, you should probably call uuid1() or uuid4(). Not
 2. In the cloned folder repository, run the following command: ```blockchain.py```
 
 ## Available endpoints
-- GET /is_valid 
-- GET /get_chain
-- GET /mine_block
-- GET /replace_chain
-- POST /connect_node
-- POST /add_tx
+- GET 
+     - /is_valid 
+     - /get_chain
+     - /mine_block
+     - /replace_chain
+- POST 
+     - /connect_node
+     - /add_tx
 
 ### Examples to call the endpoints
 You can use the HTTP client of your choice to call the endpoints. In the next examples I will use Postman to perform the requests.
