@@ -171,7 +171,31 @@ Response:
 }
 ```
 
-Check the chain for view transaciton /get_chain
+Check the chain for view transaciton:
+
+-/mine_block
+```json
+{
+    "index": 3,
+    "message": "Congrats for the new block bro!",
+    "previous_hash": "c8fb144b1782b1445da3dedae88b7277afc43b29f10885b42d81b066c0a0c7bf",
+    "proof": 45293,
+    "timestamp": "2022-06-19 15:31:00.529224",
+    "transactions": [
+        {
+            "amount": 10000,
+            "receiver": "Cristinel",
+            "sender": "Martinez"
+        },
+        {
+            "amount": 10,
+            "receiver": "Martinez",
+            "sender": "0fe9adafc8aa4319987156b493cfd2ca"
+        }
+    ]
+}
+```
+-/get_chain
 ```json
 {
     "chain": [
@@ -194,12 +218,26 @@ Check the chain for view transaciton /get_chain
                     "sender": "0fe9adafc8aa4319987156b493cfd2ca"
                 }
             ]
+        },
+        {
+            "index": 3,
+            "previous_hash": "c8fb144b1782b1445da3dedae88b7277afc43b29f10885b42d81b066c0a0c7bf",
+            "proof": 45293,
+            "timestamp": "2022-06-19 15:31:00.529224",
+            "transactions": [
+                {
+                    "amount": 10000,
+                    "receiver": "Cristinel",
+                    "sender": "Martinez"
+                },
+                {
+                    "amount": 10,
+                    "receiver": "Martinez",
+                    "sender": "0fe9adafc8aa4319987156b493cfd2ca"
+                }
+            ]
         }
     ],
-    "length": 2
+    "length": 3
 }
 ```
-
-
-
-
