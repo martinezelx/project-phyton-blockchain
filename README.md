@@ -66,7 +66,7 @@ in case of the endpoint returns a 500 error, the response will be
 }
 ```
 
-#### Get teh actual chain 
+#### Get the actual chain, in firts execution will be mined the genesis block
 - `GET http://160a-85-31-131-19.ngrok.io/get_chain`
 ```json
 {
@@ -82,4 +82,3 @@ in case of the endpoint returns a 500 error, the response will be
     "length": 1
 }
 ```
-this is the genesis block mined
