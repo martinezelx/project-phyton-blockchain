@@ -171,11 +171,11 @@ Response:
 }
 ```
 
-Check the chain for view transaciton:
+Check the chain for view transaction:
 
-1. Mine a block for get the previous transaction
+1. Mine a block for proccess the previous transaction
 
--/mine_block
+-execute /mine_block
 ```json
 {
     "index": 3,
@@ -203,7 +203,7 @@ Check the chain for view transaciton:
      - second is the first block mined in previous GET /mine_block 
      - third block contains the transaction executed in POST /add_tx
 
--/get_chain
+-execute /get_chain
 ```json
 {
     "chain": [
