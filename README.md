@@ -173,6 +173,8 @@ Response:
 
 Check the chain for view transaciton:
 
+1. Mine a block for get the previous transaction
+
 -/mine_block
 ```json
 {
@@ -195,6 +197,12 @@ Check the chain for view transaciton:
     ]
 }
 ```
+
+2. Check all chain to view the transactions
+     - the first is the genesis block
+     - second is the first block mined in previous GET /mine_block 
+     - third block contains the transaction executed in POST /add_tx
+
 -/get_chain
 ```json
 {
