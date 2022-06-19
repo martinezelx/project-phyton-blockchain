@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "b24dad7e-596b-4ff5-91d6-820d944906e8",
+		"name": "blockchain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "is_valid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.131:5001/is_valid",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"131"
+					],
+					"port": "5001",
+					"path": [
+						"is_valid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_chain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.131:5001/get_chain",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"131"
+					],
+					"port": "5001",
+					"path": [
+						"get_chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mine_block",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.131:5001/mine_block",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"131"
+					],
+					"port": "5001",
+					"path": [
+						"mine_block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "replace_chain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.131:5002/replace_chain",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"131"
+					],
+					"port": "5002",
+					"path": [
+						"replace_chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "connect_node",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\r\n        \"http://192.168.1.131:5002\",\r\n        \"http://192.168.1.131:5003\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.131:5001/connect_node",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"131"
+					],
+					"port": "5001",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_tx",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sender\": \"Jaime\",\r\n    \"receiver\": \"Cris\",\r\n    \"amount\" : 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.131:5001/add_tx",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"131"
+					],
+					"port": "5001",
+					"path": [
+						"add_tx"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
