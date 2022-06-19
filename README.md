@@ -133,18 +133,7 @@ in case of the endpoint returns a 500 error, the response will be
 ```
 returns the entire chain and a message for verify if chain is synchronized or not
 
-#### Add nodes to blockchain in local tests
-- `POST http://160a-85-31-131-19.ngrok.io/connect_node`
-```json
-{
-    "nodes": [
-        "http://192.168.1.131:5002",
-        "http://192.168.1.131:5003"
-    ]
-}
-```
-
-#### Add nodes to blockchain in real enviroment
+#### Add nodes to blockchain
 - `POST http://160a-85-31-131-19.ngrok.io/connect_node`
 ```json
 {
@@ -165,5 +154,7 @@ response:
     ]
 }
 ```
+
+
 
 
