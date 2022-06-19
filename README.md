@@ -144,7 +144,7 @@ returns the entire chain and a message for verify if chain is synchronized or no
 }
 ```
 
-response:
+Response:
 ```json
 {
     "message": "Nodes add to blockchain: ['http://160a-85-31-131-20.ngrok.io', 'http://160a-85-31-131-21.ngrok.io']",
@@ -152,6 +152,51 @@ response:
         "160a-85-31-131-20.ngrok.io",
         "160a-85-31-131-21.ngrok.io"
     ]
+}
+```
+#### Add transaction
+- `POST http://160a-85-31-131-19.ngrok.io/add_tx`
+```json
+{
+    "sender": "Martinez",
+    "receiver": "Cristinel",
+    "amount" : 10000
+}
+```
+
+Response:
+```json
+{
+    "message": "Transaction add to block with index:3"
+}
+```
+
+Check the chain for view transaciton /get_chain
+```json
+{
+    "chain": [
+        {
+            "index": 1,
+            "previous_hash": "0",
+            "proof": 1,
+            "timestamp": "2022-06-19 15:11:52.370477",
+            "transactions": []
+        },
+        {
+            "index": 2,
+            "previous_hash": "456d2e5ec72c986e0f1df55ef56969ea4a187fa0a47e631854bd1e34a47c45fa",
+            "proof": 533,
+            "timestamp": "2022-06-19 15:20:36.523789",
+            "transactions": [
+                {
+                    "amount": 10,
+                    "receiver": "Martinez",
+                    "sender": "0fe9adafc8aa4319987156b493cfd2ca"
+                }
+            ]
+        }
+    ],
+    "length": 2
 }
 ```
 
