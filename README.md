@@ -53,7 +53,7 @@ If all you want is a unique ID, you should probably call uuid1() or uuid4(). Not
 You can use the HTTP client of your choice to call the endpoints. In the next examples I will use Postman to perform the requests.
 
 #### Check if blockchain is valid
-- `GET http://160a-85-31-131-19.ngrok.io/get_chain`
+- `GET http://160a-85-31-131-19.ngrok.io/is_valid`
 ```json
 {
     "message": "OK 200 - blockchain is valid :)"
@@ -66,3 +66,20 @@ in case of the endpoint returns a 500 error, the response will be
 }
 ```
 
+#### Get teh actual chain 
+- `GET http://160a-85-31-131-19.ngrok.io/get_chain`
+```json
+{
+    "chain": [
+        {
+            "index": 1,
+            "previous_hash": "0",
+            "proof": 1,
+            "timestamp": "2022-06-19 15:11:52.370477",
+            "transactions": []
+        }
+    ],
+    "length": 1
+}
+```
+this is the genesis block mined
