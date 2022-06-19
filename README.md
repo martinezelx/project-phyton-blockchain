@@ -37,6 +37,7 @@ If all you want is a unique ID, you should probably call uuid1() or uuid4(). Not
 ## Run the application
 1. Clone the repository
 2. In the cloned folder repository, run the following command: ```blockchain.py```
+3. Find the direction in python console to execute requests: ```Running on http://c56a-85-31-131-19.ngrok.io```
 
 ## Available endpoints
 - GET 
