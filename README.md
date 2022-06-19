@@ -37,7 +37,7 @@ If all you want is a unique ID, you should probably call uuid1() or uuid4(). Not
 ## Run the application
 1. Clone the repository
 2. In the cloned folder repository, run the following command: ```blockchain.py```
-3. Find the direction in python console to execute requests: ```Running on http://c56a-85-31-131-19.ngrok.io```
+3. Find the direction in python console to execute requests: ```Running on htttp://160a-85-31-131-19.ngrok.io```
 
 ## Available endpoints
 - GET 
@@ -52,4 +52,11 @@ If all you want is a unique ID, you should probably call uuid1() or uuid4(). Not
 ### Examples to call the endpoints
 You can use the HTTP client of your choice to call the endpoints. In the next examples I will use Postman to perform the requests.
 
+#### Check if blockchain is valid
+- `GET http://160a-85-31-131-19.ngrok.io/get_chain`
+```json
+{
+    "message": "OK 200 - blockchain is valid :)"
+}
+```
 
